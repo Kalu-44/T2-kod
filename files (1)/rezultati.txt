@@ -1,0 +1,22 @@
+REZULTATI SIMULACIJE - TDMA + 16-QAM
+==================================================
+
+BER vs Eb/N0 (idealna sinhronizacija):
+ Eb/N0[dB]      Teorija    rolloff=0.5    rolloff=1.0
+         0    1.392e-01      1.415e-01      1.405e-01
+         3    7.742e-02      7.815e-02      7.771e-02
+         6    2.787e-02      2.826e-02      2.811e-02
+         9    4.390e-03      4.565e-03      4.474e-03
+        12    1.387e-04      1.680e-04      1.299e-04
+        15    1.842e-07      0.000e+00      0.000e+00
+
+Greske sinhronizacije (Eb/N0 = 25 dB, rolloff=0.5):
+  Idealna sinhronizacija    : BER = 0.000e+00
+  Greska faze (pi/6)        : BER = 1.942e-01
+  Greska u vremenu (4 odb.) : BER = 0.000e+00
+
+Poredjenje dva nacina TDM-a (rolloff=0.5):
+  Nacin A (kraci bit): sirina spektra ~ 3072 Hz (N=4x sira)
+  Nacin B (isti bit) : sirina spektra ~ 768 Hz
+  BER je za oba nacina prakticno identican (isti niz
+  simbola, isti Eb/N0); razlika je u zauzecu opsega.
